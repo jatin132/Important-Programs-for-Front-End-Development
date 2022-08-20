@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ck Rich Text Editor </title>
+<style type="text/css">
+	.ck-editor__editable {
+    min-height: 400px;
+}
+</style>
+</head>
+<script src="https://cdn.ckeditor.com/ckeditor5/33.0.0/classic/ckeditor.js"></script>
+<body>
+	<textarea class="form-control" id="floatingEditor" placeholder="Editor"></textarea>
+	<script type="text/javascript">
+    ClassicEditor
+	    .create( document.querySelector( '#floatingEditor' ) )
+	    .then( editor => {
+	    console.log( editor );
+    } )
+	    .catch( error => {
+	    console.error( error );
+	} );
+    </script>
+</body>
+</html>
